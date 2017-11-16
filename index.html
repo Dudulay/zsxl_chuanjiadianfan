@@ -1,0 +1,177 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title>招商信诺传家典范</title>
+		<link rel="stylesheet" href="css3/Base.css" media="screen">
+		<link rel="stylesheet" href="css3/Main.css" media="screen" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			.gray1.gray{
+				color:#61452D;
+				border: #61452D 1px solid;
+			}
+
+		</style>
+	</head>
+	<body>
+		<span id="result1" style="display:none"></span>
+		<article class="w640">
+			<div id="result">
+			</div>
+			<section class="container">
+                         <img src="img/10.jpg" style="position: absolute;z-index: 10000;width:0px; height:0px; overflow:hidden"/>
+				<div class="banner">
+					<img src="img/beijing.jpg"/>
+				</div>
+				<!--<h3><img src="img/zsxl_02.jpg"/></h3>-->
+				<div class="select-list">
+					<div class="select-sex adult row1">
+					<!--<h6>选取您的性别</h6>-->
+					<p class="box">
+						<a class="box box-align box-flex man" data-sex = "1"><span></span></a>
+						<a class="box box-align box-flex women" data-sex = "0"><span ></span></a>
+					</p>
+				</div>
+					<div class="select-age row2" style="padding-top: 0;">
+						<!--<h6>选取您当前的年龄</h6>-->
+						<div class="page-bar box">
+							<p class="box box-flex">
+								<!--<span class="twig">
+									<em></em>
+									<a id="age_id" class="b-radius-50"></a>
+								</span>-->
+								<input class="adultAge" type="range" name="amount" id="age_id" data-highlight="true" min="18" max="70" value="18" readonly>
+								<label >18岁</label>
+								<label >70岁</label>
+								<i id="age-num">岁</i>
+							</p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<!--<h3 style="padding-top: 30px;"><img src="img/zsxl_03.jpg"/></h3>-->
+				<div class="select-list row2">
+					
+					<div class="select-part row3">
+						<!--<h6>45种重大疾病保障</h6>-->
+						<div class="page-bar box">
+							<p class="box box-flex">
+
+								<input class="zxbz-money" type="range" name="amount" id="part_id" data-highlight="true" min="100" step="100" max="10000" value="100" readonly>
+								<label>100万</label>
+								<label>10000万</label>
+								<i id="part-num">万</i>
+							</p>
+							<p></p>
+						</div>
+					</div>
+					<div class="select-part row4">
+						<!--<h6>投入期选择</h6>-->
+						<div class="box age-limit">
+							<p class="box-flex box-align"><a class="" data-age = "1">趸交</a></p>
+							<p class="box-flex box-align"><a class="gray1 gray" data-age = "3">3年</a></p>
+							<p class="box-flex box-align"><a class="gray1 gray" data-age = "5">5年</a></p>
+							<p class="box-flex box-align"><a class="gray1 gray" data-age = "10">10年</a></p>
+							<p class="box-flex box-align"><a class="gray1 gray" data-age = "20">20年</a></p>
+						</div>
+					</div>
+
+					<div class="confirm-but row5">
+						<a></a>
+					</div>
+				</div>
+			</section>
+		</article>
+		<script type="text/javascript">
+		(function(){
+
+			var adultAge=18,//成年人年龄
+				adultSex=1,//成年人性别
+				zxbz_money=100,//主险保障
+				trq_time=1;//投入期选择
+                         //年龄的选择
+                        
+			//成人性别选择
+			$('.adult a').click(function(){
+					$('.adult a span').css('opacity','0.5');//.css('opacity','0.5');
+					$(this).find('span').css('opacity','1'); //.css('opacity','1');
+					adultSex = $(this).attr('data-sex');
+                                       
+			});
+			//选择投入期
+			$('.age-limit a').click(function(){
+				$('.age-limit a').addClass("gray1 gray") ;//.css('opacity','0.5');
+				$(this).removeClass("gray1 gray") //.css('opacity','1');
+				trq_time = $(this).attr('data-age');
+                                adultAge = $('.adultAge').val();
+                               switch (parseInt(trq_time)){
+                                         
+					case 3:
+						if(adultAge>=68){
+							alert('当前选择的投入期和保障期,年龄只能在0-67周岁！');
+                                                        $(".adultAge").val(67).slider("refresh");
+							return false;
+						}
+						break;
+					case 5:
+						if(adultAge>=66){
+							alert('当前选择的投入期和保障期,年龄只能在0-65周岁！');
+                                                        $(".adultAge").val(65).slider("refresh");
+							return false;
+						}
+						break;
+					case 10:
+						if(adultAge>=61){
+							alert('当前选择的投入期和保障期,年龄只能在0-60周岁！');
+                                                        $(".adultAge").val(60).slider("refresh");
+							return false;
+						}
+						break;
+					case 20:
+						if(adultAge>=51){
+							alert('当前选择的投入期和保障期,年龄只能在0-50周岁！');
+                                                        $(".adultAge").val(50).slider("refresh");
+							return false;
+						}
+						break;	
+					default:
+						break;
+				}
+			});
+                         
+                        //确认
+			$('.confirm-but a').click(function(){
+
+				 
+                                adultAge = $('.adultAge').val();
+				zxbz_money = parseInt($('.zxbz-money').val());//主险保障
+
+//
+				window.location.href = 'return3.html?adultAge='+adultAge+'&adultSex='+adultSex+'&zxbz_money='+zxbz_money+'&trq_time='+trq_time;
+
+			});
+			
+		})();	
+
+
+		if (localStorage.pagecount){
+               localStorage.pagecount=Number(localStorage.pagecount)+1;
+           }
+           else{
+              localStorage.pagecount=1;
+           }
+           document.getElementById("result1").innerHTML=localStorage.pagecount;
+           //localStorage.clear();
+		</script>
+	</body>
+</html>
+

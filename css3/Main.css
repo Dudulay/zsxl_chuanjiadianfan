@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* 
+	@名称: Main
+	@功能: 页面样式
+	@作者：zuozuo&447552014
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input{
+	 -webkit-appearance：none;
+}
+h3{
+	padding: 15px 0 0;
+}
+h3 img{
+	width: 100%;
+}
+.container {
+	position: relative;
+}
+.container .banner img {
+	max-width: 640px;
+	width: 100%;
+}
+.container .select-list {
+	box-sizing: border-box;
+}
+.container .select-list .row1{
+	position: absolute;
+	z-index: 2;
+
+	top:51.5%;
+	width: 100%;
+}
+.container .select-list .row2{
+	position: absolute;
+	z-index: 2;
+	top:64.5%;
+	width: 100%;
+}
+.container .select-list .row3{
+	position: absolute;
+	z-index: 2;
+	top:75%;
+	width: 100%;
+}
+.container .select-list .row4{
+	position: absolute;
+	z-index: 2;
+	top:85%;
+	width: 95%;
+	left: 4%;
+}
+.container .select-list .row5{
+	position: absolute;
+	z-index: 2;
+	top:90%;
+	width: 100%;
+}
+
+.container h6 {
+	padding: 15px 0;
+}
+.container .select-sex p {
+	height: 60px;
+	box-sizing: border-box;
+}
+.container .select-sex p a {
+	color: #808080;
+}
+/*成人*/
+.container .adult a span {
+	padding: 30px 40px;
+	background: url(../img/3.png) no-repeat;
+	background-size: 200%;
+
+
+}
+.container .adult a:nth-of-type(1) span{
+    margin-left: 15%;
+	background-position: 0 0;
+
+}
+.container .adult a:nth-of-type(2) span{
+	background-position: -83px 0;
+	opacity: 0.5;
+	margin-left: 10%;
+}
+
+.select-age {
+	padding: 20px 0;
+}
+.page-bar{
+	box-sizing: border-box;
+	width: 79%;
+	margin-left: 9%;
+}
+.page-bar p {
+	position: relative;
+}
+.page-bar p:nth-of-type(2) {
+	width: 50px;
+	color: #ff0000;
+	font-size: 18px;
+	line-height: 10px;
+	text-align: right;
+}
+.page-bar p:nth-of-type(1) i {
+	position: absolute;
+	right: -88px;
+	top: -8px;
+	text-align: center;
+	width: 20px;
+	height: 40px;
+	line-height: 40px;
+	color: #FDD769;
+	font-size: 18px;
+}
+.page-bar p span {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 15px;
+	padding-right: 30px;
+	box-sizing: border-box;
+	background: #f9cdaf;
+	border-radius: 8px;
+}
+.page-bar p span em {
+	background: #ef8337;
+	position: absolute;
+	z-index: 2;
+	width: 0%;
+	height: 10px;
+	border-radius: 5px;
+}
+.page-bar p span a {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+	background: #c7161e;
+	z-index: 3;
+	cursor: move;
+	/*-webkit-transform: translate3d(100%,0,0);*/
+}
+.page-bar p label {
+	position: absolute;
+	top: 27px;
+	color:#FCFFFF;
+}
+.page-bar p label:nth-of-type(1) {
+	left: 0;
+}
+.page-bar p label:nth-of-type(2) {
+	right: 0;
+}
+.confirm-but{
+	padding-top: 10%;
+
+}
+.confirm-but a {
+	display: block;
+	width: 139px;
+	height: 37px;
+	/*width: 40%;*/
+	/*padding: 8px 0;
+	background: #c7161e;*/
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+	background: url(../img/00.png) center center no-repeat;
+	background-size: 100% auto;
+}
+/* ui-slider */
+
+#age_id,#part_id {
+	background-color: transparent;
+	color: #FDD769;
+	text-align: right;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	display: inline-block;
+	position: absolute;
+	right: -70px;
+	top: -10px;
+	border: 1px solid rgba(0,0,0,0);
+}
+.ui-slider {
+	position: relative;
+	width: 100%;
+	text-align: left;
+	margin: 0 auto
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 32px;
+	height: 32px;
+	top: -5px;
+	margin-left: -15px;
+	cursor: pointer;
+	background: #533B24;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+.ui-btn-active {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	border: 0;
+	top: 0;
+	height: 100%;
+	background:#FDD769;
+	left: 0;
+	border-radius: 10px 0 0 10px
+}
+.ui-slider-track {
+	height: 20px;
+	background: #C49158;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	width: 100%;
+}
+.ui-loader{
+	display: none;
+}
+/*2.0*/
+.age-limit a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	color:#FDD769;
+	border:#FDD769 1px solid;
+	border-radius: 50%;
+	font-size: 15px;
+}
+.ensure-time p{
+	width: 33.33%;
+}
+.ensure-time a{
+	display: block;
+	width: 80%;
+	text-align: center;
+	color: #c7161e;
+	border: #c7161e 1px solid;
+	border-radius: 15px;
+	font-size: 15px;
+}

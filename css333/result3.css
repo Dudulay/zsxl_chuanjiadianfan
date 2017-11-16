@@ -1,0 +1,50 @@
+.div1 {
+	height:193px;
+}
+#apDiv1 {
+	background:url(../img333/10.png) no-repeat;
+	position:absolute;
+	left:4px;
+	top:1840px;
+	width:640px;
+	z-index:3000;
+}
+
+.fo1 {
+	margin:28px 0 0 18%;
+	height:50px;
+	color:#876443;
+	font-size: 13px;
+}
+.fo2 {
+	margin:-4px 0 0 18%;
+	height:50px;
+	color:#876443;
+	font-size: 13px;
+}
+.fo3 {
+	margin:-5px 0 0 18%;
+	height:50px;
+	color:#876443;
+	font-size: 13px;
+}
+@media screen and (min-width:321px) and (max-width:1000px) {
+	.fo1 {
+		margin:22px 0 0 18%;
+		height:50px;
+		color:#876443;
+		font-size: 28px;
+	}
+	.fo2 {
+		margin:-4px 0 0 18%;
+		height:50px;
+		color:#876443;
+		font-size: 28px;
+	}
+	.fo3 {
+		margin:-5px 0 0 18%;
+		height:50px;
+		color:#876443;
+		font-size: 28px;
+	}
+}

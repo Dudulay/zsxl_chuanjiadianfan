@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* 
+	@名称: Result
+	@功能: 页面样式
+	@作者：zuozuo&447552014
+*/
+body,html{
+	min-height: 100%;
+}
+.container{
+	position: relative;
+}
+.my-test {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	color: #a7212a;
+	text-align: center;
+	border-radius: 5px;
+}
+.container .float{
+	position: absolute;
+	z-index: 2;
+}
+.container .result-1{
+	left: 40px;
+	top: 70px;
+	color: #c7161e;
+	font-size: 30px;
+}
+.container .result-2{
+	padding: 0 93px;
+	left: 0;
+	top:400px;
+	
+}
+.container .result-2 p{
+}
+
+.container .result-3{
+	padding: 0 40px;
+	left: 0;
+	top:750px;
+}
+.slip p{
+	position: relative;
+	width: 200px;
+	height: 20px;
+	background: #f7931e;
+	border-radius: 0 10px 10px 0;
+}
+.slip p span{
+	position: absolute;
+	right: -120px;
+	top: -25px;
+	width: 100px;
+}
+.result-4{
+	padding: 0 40px;
+	left: 0;
+	top:740px;
+}
+.result-5{
+	padding: 0 0 0 40px;
+	left: 0;
+	top:854px;
+}
+.result-6{
+	padding: 0 0 0 45px;
+	left: 2px;
+	top: 917px;
+}
+.container .result-7{
+	padding: 0 0 0 45px;
+	left: 2px;
+	top: 1040px;
+}
+.result-text{
+	color: #f7931e;
+}
+.result-table{
+	color: #000;
+}
+.result-text,.result-table{
+	font-size: 24px;
+}
+.result-text strong{
+	font-size: 48px;
+}
+.container .but{
+	position: absolute;
+	top: 1775px;
+	width: 100%;
+	height: auto;
+}
+.container .but p:nth-of-type(1){
+	width: 100%;
+	height: 70px;
+	display: inline-block;
+}
+.container .but p:nth-of-type(2){
+	margin-top: 15px;
+	width: 100%;
+	height: 70px;
+	display: inline-block;
+}
+.container .but p a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*分享层*/
+.share-layer{
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+.share-layer span{
+	position: absolute;
+	right: 20px;
+	top: 0;
+	width: 282px;
+	height: 310px;
+	background: url(../img/share_icons_01.png) no-repeat;
+}
+
+.share-layer .but{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin-top: -50px;
+}
+.share-layer .but p{
+	text-align: center;
+	padding: 10px 0;
+}
+.share-layer .but p a{
+	display: inline-block;
+	width: 270px;
+	height: 70px;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 20px;
+}
+.share-layer .but p:nth-of-type(1) a{
+	background: #fbb03b;
+	color: #8c6239;
+}
+.share-layer .but p:nth-of-type(2) a{
+	border: #fff 2px solid;
+	color: #fff;
+}
+/*兼容手机*/
+@media only screen and (width: 320px){
+	.container .result-text{
+		font-size: 13px;
+	}
+	.container .result-1{
+		font-size:15px;
+	}
+	.result-text,.result-table{
+		font-size: 13px;
+	}
+	.result-4 p:nth-of-type(2) em{
+		font-size: 15px;
+	}
+	.result-4 p:nth-of-type(2) strong{
+		font-size: 22px;
+	}
+	.share-layer .but p a{
+		font-size: 15px;
+	}
+	.result-text strong{
+		font-size: 24px;
+	}
+}
+@media only screen and (width: 375px){
+	.container .result-text{
+		font-size: 13px;
+	}
+	.container .result-1{
+		font-size:15px;
+	}
+	.result-text,.result-table{
+		font-size: 13px;
+	}
+	.result-4 p:nth-of-type(2) em{
+		font-size: 15px;
+	}
+	.result-4 p:nth-of-type(2) strong{
+		font-size: 22px;
+	}
+	.share-layer .but p a{
+		font-size: 15px;
+	}
+	.result-text strong{
+		font-size: 24px;
+	}
+}
+@media only screen and (width: 414px){
+	.container .result-text{
+		font-size: 13px;
+	}
+	.container .result-1{
+		font-size:15px;
+	}
+	.result-text,.result-table{
+		font-size: 13px;
+	}
+	.result-4 p:nth-of-type(2) em{
+		font-size: 15px;
+	}
+	.result-4 p:nth-of-type(2) strong{
+		font-size: 22px;
+	}
+	.share-layer .but p a{
+		font-size: 15px;
+	}
+	.result-text strong{
+		font-size: 24px;
+	}
+}
